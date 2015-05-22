@@ -4,7 +4,7 @@
 //
 //  Created by Luis de Alba Gonzalez on 5/22/15.
 //  Copyright (c) 2015 ContiWorld. All rights reserved.
-//
+//  based on https://developers.google.com/maps/documentation/ios/start for the implementation
 
 #import "ViewController.h"
 
