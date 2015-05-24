@@ -244,6 +244,7 @@
 				TargetAttributes = {
 					43BCADB71B0F8CC600A663B7 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = QXF33N93KH;
 					};
 					43BCADD01B0F8CC600A663B7 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -425,6 +426,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/exam_maps/GoogleMaps",
@@ -440,6 +442,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/exam_maps/GoogleMaps",

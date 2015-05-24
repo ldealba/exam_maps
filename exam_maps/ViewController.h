@@ -11,11 +11,18 @@
 #import <CoreLocation/CoreLocation.h>
 #import <GoogleMaps/GoogleMaps.h>
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController <CLLocationManagerDelegate, GMSMapViewDelegate>
+//Variables
+@property (strong, nonatomic) CLLocationManager     *locationManager;
+@property (strong, nonatomic) CLLocation            *location;
+@property (strong, nonatomic) IBOutlet UILabel *lblLatitud;
+@property (strong, nonatomic) IBOutlet UILabel *lblLongitud;
 
 //Properties
 @property (strong, nonatomic) IBOutlet UIView *vMap;
+
+//Actions
+- (IBAction)btnPressedRefresh:(id)sender;
 
 @end
 

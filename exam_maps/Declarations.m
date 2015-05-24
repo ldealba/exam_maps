@@ -8,6 +8,10 @@
 
 #import "Declarations.h"
 
+NSString        *strUserLocation;
+float           mlatitude;
+float           mlongitude;
+
 @implementation Declarations
 
 @end
