@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+#import <CoreLocation/CoreLocation.h>
+#import <GoogleMaps/GoogleMaps.h>
 
 @interface ViewController : UIViewController
 
+
+//Properties
+@property (strong, nonatomic) IBOutlet UIView *vMap;
 
 @end
 

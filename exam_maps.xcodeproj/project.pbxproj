@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43BC41BC1B0FC17300D896C7 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 43BC41BB1B0FC17300D896C7 /* GoogleMaps.bundle */; };
 		43BCADBE1B0F8CC600A663B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BCADBD1B0F8CC600A663B7 /* main.m */; };
 		43BCADC11B0F8CC600A663B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BCADC01B0F8CC600A663B7 /* AppDelegate.m */; };
 		43BCADC41B0F8CC600A663B7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BCADC31B0F8CC600A663B7 /* ViewController.m */; };
@@ -27,6 +28,7 @@
 		43BCADF91B0F933F00A663B7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43BCADF81B0F933F00A663B7 /* QuartzCore.framework */; };
 		43BCADFB1B0F934F00A663B7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43BCADFA1B0F934F00A663B7 /* SystemConfiguration.framework */; };
 		43BCADFD1B0F937F00A663B7 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43BCADFC1B0F937F00A663B7 /* GoogleMaps.framework */; };
+		43BDBDF31B12535C003A57BE /* Declarations.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BDBDF21B12535C003A57BE /* Declarations.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		43BC41BB1B0FC17300D896C7 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = exam_maps/GoogleMaps/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		43BCADB81B0F8CC600A663B7 /* exam_maps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exam_maps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43BCADBC1B0F8CC600A663B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43BCADBD1B0F8CC600A663B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -66,6 +69,8 @@
 		43BCADF81B0F933F00A663B7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		43BCADFA1B0F934F00A663B7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		43BCADFC1B0F937F00A663B7 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = exam_maps/GoogleMaps/GoogleMaps.framework; sourceTree = "<group>"; };
+		43BDBDF11B12535C003A57BE /* Declarations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Declarations.h; sourceTree = "<group>"; };
+		43BDBDF21B12535C003A57BE /* Declarations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Declarations.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +112,7 @@
 				43BCADF81B0F933F00A663B7 /* QuartzCore.framework */,
 				43BCADF61B0F933100A663B7 /* OpenGLES.framework */,
 				43BCADF41B0F932600A663B7 /* libz.dylib */,
+				43BC41BB1B0FC17300D896C7 /* GoogleMaps.bundle */,
 				43BCADF21B0F931700A663B7 /* libicucore.dylib */,
 				43BCADF01B0F930500A663B7 /* libc++.dylib */,
 				43BCADEE1B0F927900A663B7 /* ImageIO.framework */,
@@ -174,6 +180,8 @@
 			children = (
 				43BCADBF1B0F8CC600A663B7 /* AppDelegate.h */,
 				43BCADC01B0F8CC600A663B7 /* AppDelegate.m */,
+				43BDBDF11B12535C003A57BE /* Declarations.h */,
+				43BDBDF21B12535C003A57BE /* Declarations.m */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -270,6 +278,7 @@
 				43BCADC71B0F8CC600A663B7 /* Main.storyboard in Resources */,
 				43BCADCC1B0F8CC600A663B7 /* LaunchScreen.xib in Resources */,
 				43BCADC91B0F8CC600A663B7 /* Images.xcassets in Resources */,
+				43BC41BC1B0FC17300D896C7 /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +298,7 @@
 			files = (
 				43BCADC41B0F8CC600A663B7 /* ViewController.m in Sources */,
 				43BCADC11B0F8CC600A663B7 /* AppDelegate.m in Sources */,
+				43BDBDF31B12535C003A57BE /* Declarations.m in Sources */,
 				43BCADBE1B0F8CC600A663B7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,6 +504,7 @@
 				43BCADDD1B0F8CC600A663B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		43BCADDE1B0F8CC600A663B7 /* Build configuration list for PBXNativeTarget "exam_mapsTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +513,7 @@
 				43BCADE01B0F8CC600A663B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

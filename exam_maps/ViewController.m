@@ -7,6 +7,7 @@
 //  based on https://developers.google.com/maps/documentation/ios/start for the implementation
 
 #import "ViewController.h"
+#import <GoogleMaps/GoogleMaps.h>
 
 @interface ViewController ()
 
