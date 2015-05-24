@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+//Key for the google maps application
+#define     sGoogleKey      @"AIzaSyDDVt1-iKqkoZN1PNM9cV1TQcP9h5xKAag"
+
+
 @interface Declarations : NSObject
 
 @end
