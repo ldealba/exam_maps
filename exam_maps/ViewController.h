@@ -10,6 +10,8 @@
 #import <MobileCoreServices/MobileCoreServices.h>
 #import <CoreLocation/CoreLocation.h>
 #import <GoogleMaps/GoogleMaps.h>
+#import "UIViewController+MaryPopin.h"
+#import "PopinTwoOptions.h"
 
 @interface ViewController : UIViewController <CLLocationManagerDelegate, GMSMapViewDelegate>
 //Variables
@@ -23,6 +25,8 @@
 
 //Actions
 - (IBAction)btnPressedRefresh:(id)sender;
+- (IBAction)btnPressedAdd:(id)sender;
+
 
 @end
 

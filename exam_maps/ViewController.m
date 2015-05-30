@@ -89,9 +89,37 @@
     [self.vMap addSubview:mapView_];
 }
 
+/**********************************************************************************************
+ Popin View Controller
+ **********************************************************************************************/
+- (void) createPopin
+{//-------------------------------------------------------------------------------
+    PopinTwoOptions *popin = [[PopinTwoOptions alloc] init];
+    [popin setPopinTransitionStyle:BKTPopinTransitionStyleZoom];
+    [popin setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+    [popin setPopinAlignment:0];
+    
+    BKTBlurParameters *blurParameters       = [BKTBlurParameters new];
+    blurParameters.alpha                    = 1.0f;
+    blurParameters.radius                   = 8.0f;
+    blurParameters.saturationDeltaFactor    = 1.8f;
+    blurParameters.tintColor                = [UIColor colorWithRed:0/255.0 green:130/255.0 blue:255/255.0 alpha:0.50];
+    [popin setBlurParameters:blurParameters];
+    [popin setPopinOptions:[popin popinOptions]|BKTPopinBlurryDimmingView];
+    [popin setPreferedPopinContentSize:CGSizeMake(self.view.frame.size.width, self.view.frame.size.height)];
+    [popin setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+    [self presentPopinController:popin animated:YES completion:nil];
+}
+
+
 
 - (IBAction)btnPressedRefresh:(id)sender
 {
     [self paintMap];
+}
+
+- (IBAction)btnPressedAdd:(id)sender
+{
+    [self createPopin];
 }
 @end

@@ -11,6 +11,9 @@
 //Key for the google maps application
 #define     sGoogleKey      @"AIzaSyDDVt1-iKqkoZN1PNM9cV1TQcP9h5xKAag"
 
+//Colors
+#define     nBlackTransparency  colorWithRed:0/255.0 green:0/255.0 blue:0/255.0 alpha:0.50
+
 extern      NSString        *strUserLocation;
 extern      float           mlatitude;
 extern      float           mlongitude;

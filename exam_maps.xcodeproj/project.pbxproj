@@ -29,6 +29,9 @@
 		43BCADFB1B0F934F00A663B7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43BCADFA1B0F934F00A663B7 /* SystemConfiguration.framework */; };
 		43BCADFD1B0F937F00A663B7 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43BCADFC1B0F937F00A663B7 /* GoogleMaps.framework */; };
 		43BDBDF31B12535C003A57BE /* Declarations.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BDBDF21B12535C003A57BE /* Declarations.m */; };
+		43BE8D6A1B13CF8700EC8728 /* PopinTwoOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BE8D681B13CF8700EC8728 /* PopinTwoOptions.m */; };
+		43BE8D6B1B13CF8700EC8728 /* PopinTwoOptions.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43BE8D691B13CF8700EC8728 /* PopinTwoOptions.xib */; };
+		43BE8D6F1B13D06A00EC8728 /* UIViewController+MaryPopin.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BE8D6E1B13D06A00EC8728 /* UIViewController+MaryPopin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +74,11 @@
 		43BCADFC1B0F937F00A663B7 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = exam_maps/GoogleMaps/GoogleMaps.framework; sourceTree = "<group>"; };
 		43BDBDF11B12535C003A57BE /* Declarations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Declarations.h; sourceTree = "<group>"; };
 		43BDBDF21B12535C003A57BE /* Declarations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Declarations.m; sourceTree = "<group>"; };
+		43BE8D671B13CF8700EC8728 /* PopinTwoOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PopinTwoOptions.h; path = Popups/PopinTwoOptions.h; sourceTree = "<group>"; };
+		43BE8D681B13CF8700EC8728 /* PopinTwoOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PopinTwoOptions.m; path = Popups/PopinTwoOptions.m; sourceTree = "<group>"; };
+		43BE8D691B13CF8700EC8728 /* PopinTwoOptions.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PopinTwoOptions.xib; path = Popups/PopinTwoOptions.xib; sourceTree = "<group>"; };
+		43BE8D6D1B13D06A00EC8728 /* UIViewController+MaryPopin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MaryPopin.h"; sourceTree = "<group>"; };
+		43BE8D6E1B13D06A00EC8728 /* UIViewController+MaryPopin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MaryPopin.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +147,8 @@
 		43BCADBA1B0F8CC600A663B7 /* exam_maps */ = {
 			isa = PBXGroup;
 			children = (
+				43BE8D6C1B13D03E00EC8728 /* Clases */,
+				43BE8D641B13CF5200EC8728 /* Popups */,
 				43BCADE11B0F8CE100A663B7 /* Main */,
 				43BCADC51B0F8CC600A663B7 /* Main.storyboard */,
 				43BCADE31B0F8CF800A663B7 /* Controllers */,
@@ -193,6 +203,25 @@
 				43BCADC31B0F8CC600A663B7 /* ViewController.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		43BE8D641B13CF5200EC8728 /* Popups */ = {
+			isa = PBXGroup;
+			children = (
+				43BE8D671B13CF8700EC8728 /* PopinTwoOptions.h */,
+				43BE8D681B13CF8700EC8728 /* PopinTwoOptions.m */,
+				43BE8D691B13CF8700EC8728 /* PopinTwoOptions.xib */,
+			);
+			name = Popups;
+			sourceTree = "<group>";
+		};
+		43BE8D6C1B13D03E00EC8728 /* Clases */ = {
+			isa = PBXGroup;
+			children = (
+				43BE8D6D1B13D06A00EC8728 /* UIViewController+MaryPopin.h */,
+				43BE8D6E1B13D06A00EC8728 /* UIViewController+MaryPopin.m */,
+			);
+			name = Clases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +305,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43BE8D6B1B13CF8700EC8728 /* PopinTwoOptions.xib in Resources */,
 				43BCADC71B0F8CC600A663B7 /* Main.storyboard in Resources */,
 				43BCADCC1B0F8CC600A663B7 /* LaunchScreen.xib in Resources */,
 				43BCADC91B0F8CC600A663B7 /* Images.xcassets in Resources */,
@@ -298,8 +328,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				43BCADC41B0F8CC600A663B7 /* ViewController.m in Sources */,
+				43BE8D6A1B13CF8700EC8728 /* PopinTwoOptions.m in Sources */,
 				43BCADC11B0F8CC600A663B7 /* AppDelegate.m in Sources */,
 				43BDBDF31B12535C003A57BE /* Declarations.m in Sources */,
+				43BE8D6F1B13D06A00EC8728 /* UIViewController+MaryPopin.m in Sources */,
 				43BCADBE1B0F8CC600A663B7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
