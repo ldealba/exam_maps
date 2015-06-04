@@ -12,6 +12,14 @@ NSString        *strUserLocation;
 float           mlatitude;
 float           mlongitude;
 
+NSMutableArray  *maLongitudes;
+NSMutableArray  *maLatitudes;
+NSMutableArray  *maIdentificadores;
+
+NSMutableArray  *maCustomLocation; // = [[NSMutableArray alloc] initWithCapacity:3];
+
+NSUserDefaults  *mUserDefaultsMaps;
+
 @implementation Declarations
 
 @end

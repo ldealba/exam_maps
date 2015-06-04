@@ -11,9 +11,9 @@
 #import <CoreLocation/CoreLocation.h>
 #import <GoogleMaps/GoogleMaps.h>
 #import "UIViewController+MaryPopin.h"
-#import "PopinTwoOptions.h"
+#import "PopinAddMark.h"
 
-@interface ViewController : UIViewController <CLLocationManagerDelegate, GMSMapViewDelegate>
+@interface ViewMap : UIViewController <CLLocationManagerDelegate, GMSMapViewDelegate>
 //Variables
 @property (strong, nonatomic) CLLocationManager     *locationManager;
 @property (strong, nonatomic) CLLocation            *location;

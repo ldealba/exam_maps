@@ -26,7 +26,7 @@
 #import "UIViewController+MaryPopin.h"
 
 
-@interface PopinTwoOptions : UIViewController<UITextFieldDelegate>
+@interface PopinAddMark : UIViewController<UITextFieldDelegate>
 
 
 //Actions

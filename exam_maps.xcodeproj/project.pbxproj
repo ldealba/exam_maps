@@ -10,7 +10,7 @@
 		43BC41BC1B0FC17300D896C7 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 43BC41BB1B0FC17300D896C7 /* GoogleMaps.bundle */; };
 		43BCADBE1B0F8CC600A663B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BCADBD1B0F8CC600A663B7 /* main.m */; };
 		43BCADC11B0F8CC600A663B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BCADC01B0F8CC600A663B7 /* AppDelegate.m */; };
-		43BCADC41B0F8CC600A663B7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BCADC31B0F8CC600A663B7 /* ViewController.m */; };
+		43BCADC41B0F8CC600A663B7 /* ViewMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BCADC31B0F8CC600A663B7 /* ViewMap.m */; };
 		43BCADC71B0F8CC600A663B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43BCADC51B0F8CC600A663B7 /* Main.storyboard */; };
 		43BCADC91B0F8CC600A663B7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43BCADC81B0F8CC600A663B7 /* Images.xcassets */; };
 		43BCADCC1B0F8CC600A663B7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43BCADCA1B0F8CC600A663B7 /* LaunchScreen.xib */; };
@@ -29,8 +29,8 @@
 		43BCADFB1B0F934F00A663B7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43BCADFA1B0F934F00A663B7 /* SystemConfiguration.framework */; };
 		43BCADFD1B0F937F00A663B7 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43BCADFC1B0F937F00A663B7 /* GoogleMaps.framework */; };
 		43BDBDF31B12535C003A57BE /* Declarations.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BDBDF21B12535C003A57BE /* Declarations.m */; };
-		43BE8D6A1B13CF8700EC8728 /* PopinTwoOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BE8D681B13CF8700EC8728 /* PopinTwoOptions.m */; };
-		43BE8D6B1B13CF8700EC8728 /* PopinTwoOptions.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43BE8D691B13CF8700EC8728 /* PopinTwoOptions.xib */; };
+		43BE8D6A1B13CF8700EC8728 /* PopinAddMark.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BE8D681B13CF8700EC8728 /* PopinAddMark.m */; };
+		43BE8D6B1B13CF8700EC8728 /* PopinAddMark.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43BE8D691B13CF8700EC8728 /* PopinAddMark.xib */; };
 		43BE8D6F1B13D06A00EC8728 /* UIViewController+MaryPopin.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BE8D6E1B13D06A00EC8728 /* UIViewController+MaryPopin.m */; };
 /* End PBXBuildFile section */
 
@@ -51,8 +51,8 @@
 		43BCADBD1B0F8CC600A663B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		43BCADBF1B0F8CC600A663B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		43BCADC01B0F8CC600A663B7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		43BCADC21B0F8CC600A663B7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		43BCADC31B0F8CC600A663B7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		43BCADC21B0F8CC600A663B7 /* ViewMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewMap.h; sourceTree = "<group>"; };
+		43BCADC31B0F8CC600A663B7 /* ViewMap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewMap.m; sourceTree = "<group>"; };
 		43BCADC61B0F8CC600A663B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		43BCADC81B0F8CC600A663B7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		43BCADCB1B0F8CC600A663B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -74,9 +74,9 @@
 		43BCADFC1B0F937F00A663B7 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = exam_maps/GoogleMaps/GoogleMaps.framework; sourceTree = "<group>"; };
 		43BDBDF11B12535C003A57BE /* Declarations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Declarations.h; sourceTree = "<group>"; };
 		43BDBDF21B12535C003A57BE /* Declarations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Declarations.m; sourceTree = "<group>"; };
-		43BE8D671B13CF8700EC8728 /* PopinTwoOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PopinTwoOptions.h; path = Popups/PopinTwoOptions.h; sourceTree = "<group>"; };
-		43BE8D681B13CF8700EC8728 /* PopinTwoOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PopinTwoOptions.m; path = Popups/PopinTwoOptions.m; sourceTree = "<group>"; };
-		43BE8D691B13CF8700EC8728 /* PopinTwoOptions.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PopinTwoOptions.xib; path = Popups/PopinTwoOptions.xib; sourceTree = "<group>"; };
+		43BE8D671B13CF8700EC8728 /* PopinAddMark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PopinAddMark.h; path = Popups/PopinAddMark.h; sourceTree = "<group>"; };
+		43BE8D681B13CF8700EC8728 /* PopinAddMark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PopinAddMark.m; path = Popups/PopinAddMark.m; sourceTree = "<group>"; };
+		43BE8D691B13CF8700EC8728 /* PopinAddMark.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PopinAddMark.xib; path = Popups/PopinAddMark.xib; sourceTree = "<group>"; };
 		43BE8D6D1B13D06A00EC8728 /* UIViewController+MaryPopin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MaryPopin.h"; sourceTree = "<group>"; };
 		43BE8D6E1B13D06A00EC8728 /* UIViewController+MaryPopin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MaryPopin.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -199,8 +199,8 @@
 		43BCADE31B0F8CF800A663B7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				43BCADC21B0F8CC600A663B7 /* ViewController.h */,
-				43BCADC31B0F8CC600A663B7 /* ViewController.m */,
+				43BCADC21B0F8CC600A663B7 /* ViewMap.h */,
+				43BCADC31B0F8CC600A663B7 /* ViewMap.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -208,9 +208,9 @@
 		43BE8D641B13CF5200EC8728 /* Popups */ = {
 			isa = PBXGroup;
 			children = (
-				43BE8D671B13CF8700EC8728 /* PopinTwoOptions.h */,
-				43BE8D681B13CF8700EC8728 /* PopinTwoOptions.m */,
-				43BE8D691B13CF8700EC8728 /* PopinTwoOptions.xib */,
+				43BE8D671B13CF8700EC8728 /* PopinAddMark.h */,
+				43BE8D681B13CF8700EC8728 /* PopinAddMark.m */,
+				43BE8D691B13CF8700EC8728 /* PopinAddMark.xib */,
 			);
 			name = Popups;
 			sourceTree = "<group>";
@@ -305,7 +305,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43BE8D6B1B13CF8700EC8728 /* PopinTwoOptions.xib in Resources */,
+				43BE8D6B1B13CF8700EC8728 /* PopinAddMark.xib in Resources */,
 				43BCADC71B0F8CC600A663B7 /* Main.storyboard in Resources */,
 				43BCADCC1B0F8CC600A663B7 /* LaunchScreen.xib in Resources */,
 				43BCADC91B0F8CC600A663B7 /* Images.xcassets in Resources */,
@@ -327,8 +327,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43BCADC41B0F8CC600A663B7 /* ViewController.m in Sources */,
-				43BE8D6A1B13CF8700EC8728 /* PopinTwoOptions.m in Sources */,
+				43BCADC41B0F8CC600A663B7 /* ViewMap.m in Sources */,
+				43BE8D6A1B13CF8700EC8728 /* PopinAddMark.m in Sources */,
 				43BCADC11B0F8CC600A663B7 /* AppDelegate.m in Sources */,
 				43BDBDF31B12535C003A57BE /* Declarations.m in Sources */,
 				43BE8D6F1B13D06A00EC8728 /* UIViewController+MaryPopin.m in Sources */,

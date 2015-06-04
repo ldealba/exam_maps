@@ -14,9 +14,30 @@
 //Colors
 #define     nBlackTransparency  colorWithRed:0/255.0 green:0/255.0 blue:0/255.0 alpha:0.50
 
+//Initial values for places
+#define     nInitialLatitude    @"20.6312798",nil
+#define     nInitialLongitude   @"-103.4155183",nil
+#define     nInitialIdentifier  @"Marcador Inicial",nil
+
+/*
+#define     sLocations      @[
+@[@"20.6312798",@"-103.4155183",@"Marcador Inicial",nil],
+@[@"20.6312798",@"-103.4155183",@"Marcador Inicial",nil],
+];
+ 
+ */
+
 extern      NSString        *strUserLocation;
 extern      float           mlatitude;
 extern      float           mlongitude;
+
+extern      NSMutableArray  *maLongitudes;
+extern      NSMutableArray  *maLatitudes;
+extern      NSMutableArray  *maIdentificadores;
+
+extern      NSUserDefaults  *mUserDefaultsMaps;
+
+extern      NSMutableArray  *maCustomLocation;
 
 @interface Declarations : NSObject
 

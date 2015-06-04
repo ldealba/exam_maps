@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopinTwoOptions">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopinAddMark">
             <connections>
                 <outlet property="svMain" destination="bjq-b5-EE4" id="yHB-fp-g6e"/>
                 <outlet property="txtIdentificador" destination="THF-c9-Ij7" id="c9Y-on-WT1"/>

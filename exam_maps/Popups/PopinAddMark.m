@@ -21,7 +21,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import "PopinTwoOptions.h"
+#import "PopinAddMark.h"
 #import "Declarations.h"
 
 #define nTextEmpty              0
@@ -41,17 +41,20 @@ BOOL    boTxtLongitud    = nTextEmpty;
 BOOL    boTxtPO         = nTextEmpty;
 BOOL    boTxtIdentificador = nTextEmpty;
 
+NSMutableArray *mLocation; 
 
 
-@interface PopinTwoOptions ()
+
+@interface PopinAddMark ()
 @end
 
-@implementation PopinTwoOptions
+@implementation PopinAddMark
 
 //-------------------------------------------------------------------------------
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSLog(@"Popin add locatoin viewDidLoad");
+    
 }
 //-------------------------------------------------------------------------------
 - (void)viewWillAppear:(BOOL)animated {
@@ -197,36 +200,26 @@ BOOL    boTxtIdentificador = nTextEmpty;
     else
     {//All text have info
         NSLog(@"Ready for saving");
-      /*
-        maStates        = [[NSMutableArray arrayWithArray:maStates] mutableCopy];
-        [maStates addObject:self.txtState.text];
         
-        maCapitals      = [[NSMutableArray arrayWithArray:maCapitals] mutableCopy];
-        [maCapitals addObject:self.txtCapital.text];
+        maLatitudes         = [[NSMutableArray arrayWithArray:maLatitudes] mutableCopy];
+        [maLatitudes addObject:self.txtLatitud.text];
         
-        maPO            = [[NSMutableArray arrayWithArray:maPO] mutableCopy];
-        [maPO addObject:self.txtPO.text];
+        maLongitudes        = [[NSMutableArray arrayWithArray:maLongitudes] mutableCopy];
+        [maLongitudes addObject:self.txtLongitud.text];
         
-        maPopulation    = [[NSMutableArray arrayWithArray:maPopulation] mutableCopy];
-        [maPopulation addObject:self.txtPopulation.text];
+        maIdentificadores   = [[NSMutableArray arrayWithArray:maIdentificadores] mutableCopy];
+        [maIdentificadores addObject:self.txtIdentificador.text];
+  
+        [mUserDefaultsMaps setObject: maLatitudes       forKey: @"permLatitud"];
+        [mUserDefaultsMaps setObject: maLongitudes      forKey: @"permLongitud"];
+        [mUserDefaultsMaps setObject: maIdentificadores forKey: @"permIdentif"];
         
-        [mUserDefaults setObject: maStates forKey: @"permStates"];
-        [mUserDefaults setObject: maCapitals forKey: @"permCapitals"];
-        [mUserDefaults setObject: maPO forKey: @"permPOs"];
-        [mUserDefaults setObject: maPopulation forKey: @"permPopulation"];
-        
-        NSLog(@"permStates = %@", [mUserDefaults objectForKey:@"permStates"]);
-        NSLog(@"permCapitals = %@", [mUserDefaults objectForKey:@"permCapitals"]);
-        NSLog(@"permPOs = %@", [mUserDefaults objectForKey:@"permPOs"]);
-        NSLog(@"permPOs = %@", [mUserDefaults objectForKey:@"permPopulation"]);
-        */
-        
-        
-        NSLog(@"Latitud: %@", self.txtLatitud.text);
-        NSLog(@"Longitud: %@", self.txtLongitud.text);
-        NSLog(@"Identificador: %@", self.txtIdentificador.text);
+        NSLog(@"Latitud: %@",       [mUserDefaultsMaps objectForKey:@"permLatitud"]);
+        NSLog(@"Longitud: %@",      [mUserDefaultsMaps objectForKey:@"permLongitud"]);
+        NSLog(@"Identificador: %@", [mUserDefaultsMaps objectForKey:@"permIdentif"]);
 
-
+        
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"newMap" object:nil];
         
         [self.presentingPopinViewController dismissCurrentPopinControllerAnimated:YES completion:nil];
     }
