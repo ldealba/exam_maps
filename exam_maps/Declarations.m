@@ -20,6 +20,9 @@ NSMutableArray  *maCustomLocation; // = [[NSMutableArray alloc] initWithCapacity
 
 NSUserDefaults  *mUserDefaultsMaps;
 
+//Array where markers will be saved
+NSMutableArray  *maMarkers;
+
 @implementation Declarations
 
 @end

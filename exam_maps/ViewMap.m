@@ -15,6 +15,7 @@ NSString    *tempLongitud;
 NSString    *tempIdentificador;
 NSInteger   iArrayCount;
 float       fTempFloat;
+NSInteger   iPointer;
 
 
 @interface ViewMap ()
@@ -90,6 +91,7 @@ float       fTempFloat;
         maIdentificadores        = [NSMutableArray arrayWithObjects: nInitialIdentifier];
     }
     
+    [self paintMapMarkers];
 }
 - (void)ViewControllerActive:(NSNotification *)notification
 {
@@ -155,6 +157,66 @@ float       fTempFloat;
     
     [self.vMap addSubview:mapView_];
 }
+//-------------------------------------------------------------------------------
+- (void) paintMapMarkers
+{
+    NSString    *sLatitud;
+    NSString    *sLongitud;
+    NSString    *sIdentificador;
+    
+    iPointer                = 0;
+    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:[[maLatitudes objectAtIndex:iPointer] floatValue]
+                                                            longitude:[[maLongitudes objectAtIndex:iPointer] floatValue]
+                                                                 zoom:14];
+    
+    mapView_                    = [GMSMapView mapWithFrame:CGRectZero camera:camera];
+    mapView_.myLocationEnabled  = YES;
+    mapView_.frame              = CGRectMake(0, 0, self.vMap.frame.size.width, self.vMap.frame.size.height);
+
+    
+    //Construct marker array
+    GMSCoordinateBounds *bounds;
+    GMSMarker *SavedMarker  = [[GMSMarker alloc] init];
+    
+    for (NSString *sItem in maLatitudes) {
+        // Add marker to marker array.
+        sLatitud        = [maLatitudes objectAtIndex:iPointer];
+        sLongitud       = [maLongitudes objectAtIndex:iPointer];
+        sIdentificador  = [maIdentificadores objectAtIndex:iPointer];
+        //Add markers that are already saved
+        [self addMarkerToMap:sLatitud longitude:sLongitud Identifier:sIdentificador];
+        
+        NSLog(@"sLatitud: %@, sLongitud: %@, sIdentificador: %@ and iPointer: %ld", sItem, sLongitud, sIdentificador,(long)iPointer);
+        SavedMarker.title = sIdentificador;
+        //SavedMarker.icon = [UIImage imageNamed:@"glow-marker"];
+        SavedMarker.position = CLLocationCoordinate2DMake([sLatitud floatValue], [sLongitud floatValue]);
+        SavedMarker.map = mapView_;
+        /*
+        if (iPointer == 0) {
+            maMarkers = [NSMutableArray arrayWithObject:SavedMarker];
+        }
+        else
+        {
+            [maMarkers addObject:SavedMarker];
+        }*/
+
+           //Add every bound to the coordinate bounds to get the maximum area needed to see all markers
+        if (bounds == nil) {
+            bounds = [[GMSCoordinateBounds alloc] initWithCoordinate:SavedMarker.position
+                                                          coordinate:SavedMarker.position];
+        }
+        bounds = [bounds includingCoordinate:SavedMarker.position];
+        
+        iPointer++;
+    }
+    GMSCameraUpdate *update = [GMSCameraUpdate fitBounds:bounds
+                                             withPadding:50.0f];
+    [mapView_ moveCamera:update];
+
+    
+    [self.vMap addSubview:mapView_];
+}
+
 
 /**********************************************************************************************/
  #pragma mark - Popin View Controller
@@ -184,7 +246,7 @@ float       fTempFloat;
 /**********************************************************************************************/
 - (void) addMarkerToMap:(NSString *) sLatitude longitude:(NSString *) sLongitude Identifier:(NSString *) sIdentifier
 {
-    GMSCoordinateBounds *bounds;
+    //GMSCoordinateBounds *bounds;
     UIColor *color                      = [UIColor colorWithHue:0.5f saturation:1.f brightness:1.f alpha:1.0f];
     
     float   fLatitude   = [sLatitude floatValue];
@@ -220,48 +282,19 @@ float       fTempFloat;
     NSLog(@"New Marker Added");
 
 }
-/**********************************************************************************************/
-#pragma mark - Add Marker 2
-/**********************************************************************************************/
-- (void) addMarkerToMap2:(NSString *) sLatitude longitude:(NSString *) sLongitude Identifier:(NSString *) sIdentifier
-{
-    GMSCoordinateBounds *bounds;
-    UIColor *color                      = [UIColor colorWithHue:0.5f saturation:1.f brightness:1.f alpha:1.0f];
-    
-    float   fLatitude   = [sLatitude floatValue];
-    float   fLongitude  = [sLongitude floatValue];
-    
-    CLLocationCoordinate2D position     = CLLocationCoordinate2DMake(fLatitude, fLongitude);
-    GMSMarker *marker = [GMSMarker markerWithPosition:position];
-    // Creates a marker in the center of the map.
-    //GMSMarker *marker = [[GMSMarker alloc] init];
-    //marker.position = CLLocationCoordinate2DMake(-33.86, 151.20);
-    marker.title = sIdentifier;
-    marker.snippet = @"Mi marcador";
-    
-    marker.appearAnimation = kGMSMarkerAnimationPop;
-    marker.icon = [GMSMarker markerImageWithColor:color];
-    
-    marker.map = mapView_;
-    //Move camera to new coordinates
-    bounds = [bounds includingCoordinate:marker.position];
-    GMSCameraUpdate *update = [GMSCameraUpdate fitBounds:bounds withPadding:50.0f];
-    [mapView_ moveCamera:update];
-    
-    [self.vMap addSubview:mapView_];
-    
-    NSLog(@"New Marker Added");
-    
-}
 
+/**********************************************************************************************/
+#pragma mark - Refresh button pressed
+/**********************************************************************************************/
 - (IBAction)btnPressedRefresh:(id)sender
 {
-    
-    
-    [self paintMap];
-    
+   // [self paintMap];
+    [self paintMapMarkers];
 }
 
+/**********************************************************************************************/
+#pragma mark - Add button pressed
+/**********************************************************************************************/
 - (IBAction)btnPressedAdd:(id)sender
 {
     [self createPopin];

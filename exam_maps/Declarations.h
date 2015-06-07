@@ -19,13 +19,6 @@
 #define     nInitialLongitude   @"-103.4155183",nil
 #define     nInitialIdentifier  @"Marcador Inicial",nil
 
-/*
-#define     sLocations      @[
-@[@"20.6312798",@"-103.4155183",@"Marcador Inicial",nil],
-@[@"20.6312798",@"-103.4155183",@"Marcador Inicial",nil],
-];
- 
- */
 
 extern      NSString        *strUserLocation;
 extern      float           mlatitude;
@@ -38,6 +31,8 @@ extern      NSMutableArray  *maIdentificadores;
 extern      NSUserDefaults  *mUserDefaultsMaps;
 
 extern      NSMutableArray  *maCustomLocation;
+
+extern      NSMutableArray  *maMarkers;
 
 @interface Declarations : NSObject
 
