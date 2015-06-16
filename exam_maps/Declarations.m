@@ -8,6 +8,13 @@
 
 #import "Declarations.h"
 
+int             iKeyboardHeight;
+int             iKeyboardWidth;
+
+/**********************************************************************
+ Google maps Tab Variables
+ **********************************************************************/
+
 NSString        *strUserLocation;
 float           mlatitude;
 float           mlongitude;
@@ -22,6 +29,19 @@ NSUserDefaults  *mUserDefaultsMaps;
 
 //Array where markers will be saved
 NSMutableArray  *maMarkers;
+
+/**********************************************************************
+ Contacts Tab Variables
+ **********************************************************************/
+NSMutableArray  *maContactNames;
+NSMutableArray  *maContactImages;
+int             miIndex;
+NSData          *mImageData;
+BOOL            boAllContTxts;
+BOOL            boTxtContact;
+NSData          *mTempImage;
+
+
 
 @implementation Declarations
 

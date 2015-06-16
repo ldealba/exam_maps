@@ -4,14 +4,14 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopinAddMark">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopinAddContact">
             <connections>
+                <outlet property="imgContactPhoto" destination="Axr-8h-FbQ" id="wlu-te-dcj"/>
+                <outlet property="lblalgo" destination="Ybi-b8-VUt" id="Kdx-eh-RbJ"/>
                 <outlet property="svMain" destination="bjq-b5-EE4" id="yHB-fp-g6e"/>
-                <outlet property="txtIdentificador" destination="THF-c9-Ij7" id="c9Y-on-WT1"/>
-                <outlet property="txtLatitud" destination="Zr8-QE-0hV" id="K2M-xN-ulR"/>
-                <outlet property="txtLongitud" destination="SjP-1z-VVc" id="VjT-RH-kaP"/>
-                <outlet property="vMain" destination="bYM-EJ-FVI" id="czC-dF-tE7"/>
-                <outlet property="view" destination="4gr-8Z-YI8" id="YOP-W2-HPs"/>
+                <outlet property="txtContactName" destination="Zr8-QE-0hV" id="ypM-dm-2vk"/>
+                <outlet property="vMain" destination="bYM-EJ-FVI" id="15S-kO-qHI"/>
+                <outlet property="view" destination="4gr-8Z-YI8" id="2Ll-rO-u2e"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -24,43 +24,16 @@
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <subviews>
                         <view contentMode="scaleToFill" id="bYM-EJ-FVI" userLabel="vMain">
-                            <rect key="frame" x="17" y="94" width="286" height="360"/>
+                            <rect key="frame" x="17" y="90" width="286" height="360"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Latitud" minimumFontSize="17" id="Zr8-QE-0hV" userLabel="txtLatitud">
-                                    <rect key="frame" x="43" y="113" width="200" height="42"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardType="numbersAndPunctuation"/>
-                                    <connections>
-                                        <outlet property="delegate" destination="-1" id="RYc-Iz-oOu"/>
-                                    </connections>
-                                </textField>
-                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Longitud" minimumFontSize="17" id="SjP-1z-VVc" userLabel="txtLongitud">
-                                    <rect key="frame" x="43" y="163" width="200" height="42"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
-                                    <connections>
-                                        <outlet property="delegate" destination="-1" id="xfR-Wi-tjd"/>
-                                    </connections>
-                                </textField>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agregar Ubicacion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ybi-b8-VUt">
-                                    <rect key="frame" x="0.0" y="30" width="286" height="42"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agregar Contacto" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ybi-b8-VUt">
+                                    <rect key="frame" x="0.0" y="8" width="286" height="42"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                     <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Identificador" minimumFontSize="17" id="THF-c9-Ij7" userLabel="txtIdentificador">
-                                    <rect key="frame" x="43" y="213" width="200" height="42"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                    <connections>
-                                        <outlet property="delegate" destination="-1" id="fHy-h2-nct"/>
-                                    </connections>
-                                </textField>
                                 <view contentMode="scaleToFill" id="DxR-WW-e8X" userLabel="vConfirmBtns">
                                     <rect key="frame" x="0.0" y="296" width="286" height="64"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -122,6 +95,29 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Axr-8h-FbQ" userLabel="imgContactPhoto">
+                                    <rect key="frame" x="93" y="122" width="100" height="100"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nombre" minimumFontSize="17" id="Zr8-QE-0hV" userLabel="txtContactName">
+                                    <rect key="frame" x="43" y="72" width="200" height="42"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="ptc-F0-jJ8"/>
+                                    </connections>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5cT-3L-GFT" userLabel="btnChangeImg">
+                                    <rect key="frame" x="93" y="122" width="100" height="100"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnChangeImage_Pressed:" destination="-1" eventType="touchUpInside" id="AL3-PI-LG9"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </view>

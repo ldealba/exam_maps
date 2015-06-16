@@ -24,21 +24,17 @@
 #import "PopinAddMark.h"
 #import "Declarations.h"
 
-#define nTextEmpty              0
-#define nTextNoEmpty            1
 
 #define nTxtLatitudMaxLenght    30
 #define nTxtLongitudMaxLenght   30
-#define nTxtPOMaxLenght         5
+//#define nTxtPOMaxLenght         5
 #define nTxtMaxIdentificador    30
 
-int     iKeyboardHeight;
-int     iKeyboardWidth;
 
 BOOL    boAllTxts       = nTextEmpty;
 BOOL    boTxtLatitud      = nTextEmpty;
 BOOL    boTxtLongitud    = nTextEmpty;
-BOOL    boTxtPO         = nTextEmpty;
+//BOOL    boTxtPO         = nTextEmpty;
 BOOL    boTxtIdentificador = nTextEmpty;
 
 NSMutableArray *mLocation; 
@@ -92,7 +88,13 @@ NSMutableArray *mLocation;
     {
         self.svMain.contentSize = CGSizeMake(self.svMain.frame.size.width, self.svMain.frame.size.height + iKeyboardHeight/2  + 10);
         
-        [self.svMain setContentOffset: CGPointMake(0, 124) animated:YES];
+        [self.svMain setContentOffset: CGPointMake(0, 130) animated:YES];
+    }
+    else if (self.txtIdentificador.isEditing)
+    {
+        self.svMain.contentSize = CGSizeMake(self.svMain.frame.size.width, self.svMain.frame.size.height + iKeyboardHeight/2  + 10);
+        
+        [self.svMain setContentOffset: CGPointMake(0,iKeyboardHeight - (self.view.frame.size.height - self.vMain.frame.size.height)/2 + 50)  animated:YES];
     }
     else
     {

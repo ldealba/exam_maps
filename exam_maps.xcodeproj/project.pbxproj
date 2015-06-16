@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		434243DD1B27333B00E33310 /* Bluetooth-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 434243DA1B27333B00E33310 /* Bluetooth-icon.png */; };
+		434243DE1B27333B00E33310 /* Camera-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 434243DB1B27333B00E33310 /* Camera-icon.png */; };
+		434243DF1B27333B00E33310 /* Maps-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 434243DC1B27333B00E33310 /* Maps-icon.png */; };
+		434243E11B27348100E33310 /* camera2-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 434243E01B27348100E33310 /* camera2-icon.png */; };
+		434243E31B2735B200E33310 /* camera3-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 434243E21B2735B200E33310 /* camera3-icon.png */; };
+		434243E71B27367E00E33310 /* Bluetooth2-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 434243E61B27367E00E33310 /* Bluetooth2-icon.png */; };
+		434243E91B2736D500E33310 /* Bluetooth3-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 434243E81B2736D500E33310 /* Bluetooth3-icon.png */; };
+		434243EB1B273BC600E33310 /* Maps2-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 434243EA1B273BC600E33310 /* Maps2-icon.png */; };
+		43B8F91C1B2E71A2008F5175 /* tab_ChooseImg.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B8F91B1B2E71A2008F5175 /* tab_ChooseImg.m */; };
+		43B996BA1B2B23AB0087EFBD /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43B996B91B2B23AB0087EFBD /* MobileCoreServices.framework */; };
+		43B996BE1B2B7DF20087EFBD /* PopinAddContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B996BC1B2B7DF20087EFBD /* PopinAddContact.m */; };
+		43B996BF1B2B7DF20087EFBD /* PopinAddContact.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43B996BD1B2B7DF20087EFBD /* PopinAddContact.xib */; };
 		43BC41BC1B0FC17300D896C7 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 43BC41BB1B0FC17300D896C7 /* GoogleMaps.bundle */; };
 		43BCADBE1B0F8CC600A663B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BCADBD1B0F8CC600A663B7 /* main.m */; };
 		43BCADC11B0F8CC600A663B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BCADC01B0F8CC600A663B7 /* AppDelegate.m */; };
@@ -32,6 +44,10 @@
 		43BE8D6A1B13CF8700EC8728 /* PopinAddMark.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BE8D681B13CF8700EC8728 /* PopinAddMark.m */; };
 		43BE8D6B1B13CF8700EC8728 /* PopinAddMark.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43BE8D691B13CF8700EC8728 /* PopinAddMark.xib */; };
 		43BE8D6F1B13D06A00EC8728 /* UIViewController+MaryPopin.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BE8D6E1B13D06A00EC8728 /* UIViewController+MaryPopin.m */; };
+		43C0B0861B29DA730093CAEB /* add-contact-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C0B0851B29DA730093CAEB /* add-contact-icon.png */; };
+		43C0B0891B29FBC30093CAEB /* tab_Contacts.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C0B0881B29FBC30093CAEB /* tab_Contacts.m */; };
+		43C0B08D1B29FED70093CAEB /* celNames.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C0B08C1B29FED70093CAEB /* celNames.m */; };
+		43C0B08F1B2A3A5A0093CAEB /* Contacts-Default-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C0B08E1B2A3A5A0093CAEB /* Contacts-Default-icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +61,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		434243DA1B27333B00E33310 /* Bluetooth-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Bluetooth-icon.png"; path = "Images/Bluetooth-icon.png"; sourceTree = "<group>"; };
+		434243DB1B27333B00E33310 /* Camera-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Camera-icon.png"; path = "Images/Camera-icon.png"; sourceTree = "<group>"; };
+		434243DC1B27333B00E33310 /* Maps-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Maps-icon.png"; path = "Images/Maps-icon.png"; sourceTree = "<group>"; };
+		434243E01B27348100E33310 /* camera2-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "camera2-icon.png"; path = "Images/camera2-icon.png"; sourceTree = "<group>"; };
+		434243E21B2735B200E33310 /* camera3-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "camera3-icon.png"; path = "Images/camera3-icon.png"; sourceTree = "<group>"; };
+		434243E61B27367E00E33310 /* Bluetooth2-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Bluetooth2-icon.png"; path = "Images/Bluetooth2-icon.png"; sourceTree = "<group>"; };
+		434243E81B2736D500E33310 /* Bluetooth3-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Bluetooth3-icon.png"; path = "Images/Bluetooth3-icon.png"; sourceTree = "<group>"; };
+		434243EA1B273BC600E33310 /* Maps2-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Maps2-icon.png"; path = "Images/Maps2-icon.png"; sourceTree = "<group>"; };
+		43B8F91A1B2E71A2008F5175 /* tab_ChooseImg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tab_ChooseImg.h; sourceTree = "<group>"; };
+		43B8F91B1B2E71A2008F5175 /* tab_ChooseImg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tab_ChooseImg.m; sourceTree = "<group>"; };
+		43B996B91B2B23AB0087EFBD /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		43B996BB1B2B7DF20087EFBD /* PopinAddContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PopinAddContact.h; path = Popups/PopinAddContact.h; sourceTree = "<group>"; };
+		43B996BC1B2B7DF20087EFBD /* PopinAddContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PopinAddContact.m; path = Popups/PopinAddContact.m; sourceTree = "<group>"; };
+		43B996BD1B2B7DF20087EFBD /* PopinAddContact.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PopinAddContact.xib; path = Popups/PopinAddContact.xib; sourceTree = "<group>"; };
 		43BC41BB1B0FC17300D896C7 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = exam_maps/GoogleMaps/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		43BCADB81B0F8CC600A663B7 /* exam_maps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exam_maps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43BCADBC1B0F8CC600A663B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,6 +109,12 @@
 		43BE8D691B13CF8700EC8728 /* PopinAddMark.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PopinAddMark.xib; path = Popups/PopinAddMark.xib; sourceTree = "<group>"; };
 		43BE8D6D1B13D06A00EC8728 /* UIViewController+MaryPopin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MaryPopin.h"; sourceTree = "<group>"; };
 		43BE8D6E1B13D06A00EC8728 /* UIViewController+MaryPopin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MaryPopin.m"; sourceTree = "<group>"; };
+		43C0B0851B29DA730093CAEB /* add-contact-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "add-contact-icon.png"; path = "Images/add-contact-icon.png"; sourceTree = "<group>"; };
+		43C0B0871B29FBC30093CAEB /* tab_Contacts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tab_Contacts.h; sourceTree = "<group>"; };
+		43C0B0881B29FBC30093CAEB /* tab_Contacts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tab_Contacts.m; sourceTree = "<group>"; };
+		43C0B08B1B29FED70093CAEB /* celNames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = celNames.h; sourceTree = "<group>"; };
+		43C0B08C1B29FED70093CAEB /* celNames.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = celNames.m; sourceTree = "<group>"; };
+		43C0B08E1B2A3A5A0093CAEB /* Contacts-Default-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Contacts-Default-icon.png"; path = "Images/Contacts-Default-icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,9 +122,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43BCADF91B0F933F00A663B7 /* QuartzCore.framework in Frameworks */,
+				43B996BA1B2B23AB0087EFBD /* MobileCoreServices.framework in Frameworks */,
 				43BCADFD1B0F937F00A663B7 /* GoogleMaps.framework in Frameworks */,
 				43BCADFB1B0F934F00A663B7 /* SystemConfiguration.framework in Frameworks */,
-				43BCADF91B0F933F00A663B7 /* QuartzCore.framework in Frameworks */,
 				43BCADF71B0F933100A663B7 /* OpenGLES.framework in Frameworks */,
 				43BCADF51B0F932600A663B7 /* libz.dylib in Frameworks */,
 				43BCADF31B0F931700A663B7 /* libicucore.dylib in Frameworks */,
@@ -112,9 +149,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		434243D91B27332700E33310 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				43C0B08E1B2A3A5A0093CAEB /* Contacts-Default-icon.png */,
+				43C0B0851B29DA730093CAEB /* add-contact-icon.png */,
+				434243EA1B273BC600E33310 /* Maps2-icon.png */,
+				434243E81B2736D500E33310 /* Bluetooth3-icon.png */,
+				434243E61B27367E00E33310 /* Bluetooth2-icon.png */,
+				434243E21B2735B200E33310 /* camera3-icon.png */,
+				434243E01B27348100E33310 /* camera2-icon.png */,
+				434243DA1B27333B00E33310 /* Bluetooth-icon.png */,
+				434243DB1B27333B00E33310 /* Camera-icon.png */,
+				434243DC1B27333B00E33310 /* Maps-icon.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		43BCADAF1B0F8CC600A663B7 = {
 			isa = PBXGroup;
 			children = (
+				43B996B91B2B23AB0087EFBD /* MobileCoreServices.framework */,
 				43BCADFC1B0F937F00A663B7 /* GoogleMaps.framework */,
 				43BCADFA1B0F934F00A663B7 /* SystemConfiguration.framework */,
 				43BCADF81B0F933F00A663B7 /* QuartzCore.framework */,
@@ -147,10 +202,12 @@
 		43BCADBA1B0F8CC600A663B7 /* exam_maps */ = {
 			isa = PBXGroup;
 			children = (
+				43BCADC51B0F8CC600A663B7 /* Main.storyboard */,
+				43C0B08A1B29FEAB0093CAEB /* Customized */,
+				434243D91B27332700E33310 /* Images */,
 				43BE8D6C1B13D03E00EC8728 /* Clases */,
 				43BE8D641B13CF5200EC8728 /* Popups */,
 				43BCADE11B0F8CE100A663B7 /* Main */,
-				43BCADC51B0F8CC600A663B7 /* Main.storyboard */,
 				43BCADE31B0F8CF800A663B7 /* Controllers */,
 				43BCADC81B0F8CC600A663B7 /* Images.xcassets */,
 				43BCADCA1B0F8CC600A663B7 /* LaunchScreen.xib */,
@@ -201,6 +258,10 @@
 			children = (
 				43BCADC21B0F8CC600A663B7 /* ViewMap.h */,
 				43BCADC31B0F8CC600A663B7 /* ViewMap.m */,
+				43C0B0871B29FBC30093CAEB /* tab_Contacts.h */,
+				43C0B0881B29FBC30093CAEB /* tab_Contacts.m */,
+				43B8F91A1B2E71A2008F5175 /* tab_ChooseImg.h */,
+				43B8F91B1B2E71A2008F5175 /* tab_ChooseImg.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -211,6 +272,9 @@
 				43BE8D671B13CF8700EC8728 /* PopinAddMark.h */,
 				43BE8D681B13CF8700EC8728 /* PopinAddMark.m */,
 				43BE8D691B13CF8700EC8728 /* PopinAddMark.xib */,
+				43B996BB1B2B7DF20087EFBD /* PopinAddContact.h */,
+				43B996BC1B2B7DF20087EFBD /* PopinAddContact.m */,
+				43B996BD1B2B7DF20087EFBD /* PopinAddContact.xib */,
 			);
 			name = Popups;
 			sourceTree = "<group>";
@@ -222,6 +286,15 @@
 				43BE8D6E1B13D06A00EC8728 /* UIViewController+MaryPopin.m */,
 			);
 			name = Clases;
+			sourceTree = "<group>";
+		};
+		43C0B08A1B29FEAB0093CAEB /* Customized */ = {
+			isa = PBXGroup;
+			children = (
+				43C0B08B1B29FED70093CAEB /* celNames.h */,
+				43C0B08C1B29FED70093CAEB /* celNames.m */,
+			);
+			name = Customized;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,11 +378,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43B996BF1B2B7DF20087EFBD /* PopinAddContact.xib in Resources */,
 				43BE8D6B1B13CF8700EC8728 /* PopinAddMark.xib in Resources */,
+				434243E31B2735B200E33310 /* camera3-icon.png in Resources */,
+				434243DD1B27333B00E33310 /* Bluetooth-icon.png in Resources */,
+				434243DE1B27333B00E33310 /* Camera-icon.png in Resources */,
+				434243EB1B273BC600E33310 /* Maps2-icon.png in Resources */,
 				43BCADC71B0F8CC600A663B7 /* Main.storyboard in Resources */,
+				434243E91B2736D500E33310 /* Bluetooth3-icon.png in Resources */,
 				43BCADCC1B0F8CC600A663B7 /* LaunchScreen.xib in Resources */,
 				43BCADC91B0F8CC600A663B7 /* Images.xcassets in Resources */,
 				43BC41BC1B0FC17300D896C7 /* GoogleMaps.bundle in Resources */,
+				434243E71B27367E00E33310 /* Bluetooth2-icon.png in Resources */,
+				43C0B0861B29DA730093CAEB /* add-contact-icon.png in Resources */,
+				434243E11B27348100E33310 /* camera2-icon.png in Resources */,
+				43C0B08F1B2A3A5A0093CAEB /* Contacts-Default-icon.png in Resources */,
+				434243DF1B27333B00E33310 /* Maps-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,10 +411,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43C0B0891B29FBC30093CAEB /* tab_Contacts.m in Sources */,
 				43BCADC41B0F8CC600A663B7 /* ViewMap.m in Sources */,
+				43B996BE1B2B7DF20087EFBD /* PopinAddContact.m in Sources */,
 				43BE8D6A1B13CF8700EC8728 /* PopinAddMark.m in Sources */,
 				43BCADC11B0F8CC600A663B7 /* AppDelegate.m in Sources */,
 				43BDBDF31B12535C003A57BE /* Declarations.m in Sources */,
+				43B8F91C1B2E71A2008F5175 /* tab_ChooseImg.m in Sources */,
+				43C0B08D1B29FED70093CAEB /* celNames.m in Sources */,
 				43BE8D6F1B13D06A00EC8728 /* UIViewController+MaryPopin.m in Sources */,
 				43BCADBE1B0F8CC600A663B7 /* main.m in Sources */,
 			);
